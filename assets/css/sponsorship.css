@@ -1,0 +1,116 @@
+.sponsorship-top {
+	background-color: #218CCB;
+
+	color: #FFF;
+	text-align: left;
+
+	overflow: hidden;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.sponsorship-top-title {
+	font-size: 2em;
+	line-height: 1.2em;
+	font-weight: 800;
+
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.8em;
+}
+.sponsorship-top-description {
+	font-size: 1.4em;
+	font-weight: 300;
+
+	text-align: justify;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.8em;
+}
+.sponsorship-top-description a{
+	color: #FFF;
+}
+.sponsorship {
+	background: url(../img/backgroundSponsorship.png) no-repeat center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+
+	color: #1F8CCB;
+	text-align: center;
+
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.sponsorship-title {
+	font-size: 2em;
+	font-weight: 800;
+
+	max-width: 79.8%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.8em;
+}
+.sponsorship-description {
+	font-size: 1.4em;
+	font-weight: 300;
+
+	max-width: 465px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.8em;
+}
+.sponsorship .buttonAction {
+	background-color: #1F8CCB;
+	color: #FFF;
+
+	margin-bottom: 0.4em;
+}
+
+.sponsorship-top .buttonAction{
+	background-color: #FFF;
+	color: #1F8CCB;
+	max-width: 220px;
+}
+
+.sponsorship:after {
+	content: url(../img/iconSponsorship.svg);
+
+	display: block;
+	width: 212px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media(min-width: 800px) {
+	.sponsorship {
+		overflow: hidden;
+		padding: 1em 15%;
+	}
+	.sponsorship:after {
+		display: none;
+	}
+	.sponsorship:before {
+		content: url(../img/iconSponsorship.svg);
+
+		float: left;
+		width: 400px;
+	}
+	.sponsorship-title {
+		margin-top: 4em;
+	}
+	.sponsorship-title,
+	.sponsorship-description {
+		text-align: right;
+		max-width: none;
+	}
+	.sponsorship .buttonAction {
+		margin-right: 0;
+	}
+	.sponsorship-description {
+		max-width: auto;
+		width: auto;
+	}
+}

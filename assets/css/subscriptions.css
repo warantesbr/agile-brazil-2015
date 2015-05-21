@@ -36,6 +36,15 @@
 	margin-bottom: 0.8em;
 }
 
+.subscriptions .buttonAction {
+	background-color: #FFF;
+	color: #1F8CCB;
+	
+	margin-left: 0;
+	display: block;
+	margin-bottom: 2em;
+}
+
 
 .price {
 	margin-bottom: 2em;

@@ -1,28 +1,59 @@
+
 .header {
-	background: url("../img/bannerTop.jpg") no-repeat center center;
+	background: url("../images/bg-header.png") no-repeat center center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
-	
-	padding-top: 0.8em;
-	padding-bottom: 2em;
 
 	text-align: center;
 	color: #FFF;
 }
+
 .header-title {
-	margin-bottom: 3.5em;
-	text-align: left;
-
+	text-align: center;
 	padding-left: 0.5em;
-
 	position: relative;
-	top: -50px;
 }
+
+.header-info {
+	background: url("../images/icon-vela.png") no-repeat center bottom;
+	height: 450px;
+
+}
+
+.header-info-title {
+	font-weight: bold;
+	font-size: 4em;
+	line-height: 1.2em;
+	padding-top: 2em;
+}
+
+.header-info-subtitle {
+	font-weight: 600;
+	font-size: 2.2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.header-info-helpText {
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1em;
+	margin-bottom: 6em;
+}
+
+.header .buttonAction {
+	background-color: #fca027;
+	color: #fff;
+}
+
+
+
 .wrap-header-menu {
 	margin-bottom: 3em;
 }
+
 .wrap-header-menu:before {
 	content: 'Menu ▾';
 
@@ -42,17 +73,20 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
 .wrap-header-menu:hover .header-menu,
 .wrap-header-menu:active .header-menu {
 	max-height: 1000px;
 	margin-bottom: 0;
 }
+
 .header-menu {
 	max-height: 1000px;
 	overflow: hidden;
 
 	transition: max-height 0.5s linear;
 }
+
 .header-menu-item a {
 	background-color: #1F8CCB;
 
@@ -66,43 +100,21 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.header-subtitle {
-	font-weight: 600;
-	font-size: 2em;
-	line-height: 1.1em;
-}
-.header-helpText {
-	font-weight: 300;
-	font-size: 0.9em;
-	line-height: 1em;
 
-	margin-bottom: 7.5em;
+@media(min-width: 320px) {
+
 }
-.header .buttonAction {
-	background-color: #FFF;
-	color: #1F8CCB;
+
+@media(min-width: 480px) {
+
 }
-@media(min-width: 400px) {
-	.header {
-		font-size: 1.3em;
-	}
+
+@media(min-width: 992px) {
 	.header-title {
-		margin-bottom: 2.5em;
-	}
-	.header-helpText {
-		margin-bottom: 2.5em;
+		text-align: left;
 	}
 }
-@media(min-width: 540px) {
-	
-}
-@media(min-width: 520px) {
-	.header {
-		font-size: 1.7em;
-	}
-}
-@media(min-width: 537px) {
-   	.header-title {
-   		position: static;
-   	}
+
+@media(min-width: 1200px) {
+
 }

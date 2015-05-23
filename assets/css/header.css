@@ -85,6 +85,7 @@
 	overflow: hidden;
 
 	transition: max-height 0.5s linear;
+	display: none;
 }
 
 .header-menu-item a {
@@ -113,6 +114,29 @@
 	.header-title {
 		text-align: left;
 	}
+
+	.wrap-header-menu:before {
+		display: none;
+	}
+
+	.header-title {
+		float: left;
+	}
+
+	.header-menu {
+		display: block;
+		float: right;
+	}
+
+	.header-menu-item {
+		display: inline-block;
+	}
+
+	.header-menu-item a {
+		width: auto;
+		padding: 1em;
+	}
+
 }
 
 @media(min-width: 1200px) {

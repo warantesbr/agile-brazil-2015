@@ -168,6 +168,10 @@
 
 }
 
+.clear {
+	clear: both;
+}
+
 @media(min-width: 1200px) {
 	.header-menu-item a {
 		padding: 0.5em 1.3em;

@@ -1,3 +1,10 @@
+
+.headerAa {
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+}
+
 .headerAa-abLogo {
 	padding: 1em 0 1em 2em;
 }

@@ -107,6 +107,11 @@
 	margin-right: auto;
 }
 
+.header-menu-item a.active{
+	background-color: #1cb430;
+	color: #fff;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;

@@ -73,6 +73,10 @@
 	margin-left: auto;
 }
 
+.wrap-header-menu:hover .header-menu {
+	display: block;
+}
+
 .wrap-header-menu:hover .header-menu,
 .wrap-header-menu:active .header-menu {
 	max-height: 1000px;

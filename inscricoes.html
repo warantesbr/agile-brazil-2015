@@ -31,6 +31,20 @@
 		ga('create', 'UA-12446729-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('ul.nav.nav-tabs li a').click(function () {
+				event.preventDefault();
+				$('ul.nav.nav-tabs li').removeClass('active');
+				$(this).parent().addClass('active');
+				$('dl.price').hide();
+				$('dl.price.'+$(this).attr('href')).show();
+
+				return false;
+			});
+		});
+	</script>
 </head>
 
 <body class="">
@@ -85,7 +99,13 @@
 		<div class="content">
 			<p>Preparamos ótimos descontos para nossos early birds, estudantes e membros da Agile Alliance.</p>
 			<p>As faixas de preço para esse ano são as seguintes:</p>
-			<dl class="price">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="regular">Regular</a></li>
+				<li><a href="aa">Agile Alliance</a></li>
+				<li><a href="student">Estudante</a></li>
+			</ul>
+
+			<dl class="price regular">
 				<dt>Super early bird (100 primeiros inscritos)</dt>
 				<dd>R$ 420,00</dd>
 				<dt>Early bird (150 próximos inscritos)</dt>
@@ -94,8 +114,8 @@
 				<dd>R$ 740,00</a></dd>
 				<dt>Última hora ou Empenho</dt>
 				<dd>R$ 840,00</dd>
-				<dt>Estudante Graduação (Cota de 80 inscritos)</dt>
-				<dd>R$ 370,00</dd>
+			</dl>
+			<dl class="price aa">
 				<dt>Membro Agile Alliance Super Early Bird</dt>
 				<dd>R$ 378,00</dd>
 				<dt>Membro Agile Alliance Early Bird</dt>
@@ -103,6 +123,11 @@
 				<dt>Membro Agile Alliance Cheia</dt>
 				<dd>R$ 666,00</dd>
 			</dl>
+			<dl class="price student">
+				<dt>Estudante Graduação (Cota de 80 inscritos)</dt>
+				<dd>R$ 370,00</dd>
+			</dl>
+			<hr />
 			<a href="https://inscricoes.agilebrazil.com/events/12/attendances/new?locale=pt" target="_blank" class="buttonAction">Faça sua inscrição</a>
 			<h3>Perguntas frequentes</h3>
 			<dl class="faq">

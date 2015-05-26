@@ -5,22 +5,17 @@
 	text-align: center;
 
 	overflow: hidden;
-	padding-top: 2em;
+	padding-top: 5em;
 	padding-bottom: 2em;
 }
 .keynotes-title {
 	font-size: 2em;
 	line-height: 1.2em;
 	font-weight: 800;
-	
-	width: 79.6875%;
-	margin-left: auto;
-	margin-right: auto;
+
 	margin-bottom: 0.8em;
 }
-.keynotes-speakers {
-	max-width: 580px;
-}
+
 .keynotes-speakers:not(:last-child) {
 	margin-bottom: 2em;
 }
@@ -40,7 +35,7 @@
 	color: #99C0D6;
 	font-size: 0.9em;
 	line-height: 1em;
-	
+
 	margin-bottom: 0.8em;
 }
 .keynotes-speakers-description {
@@ -61,7 +56,6 @@
 @media(min-width: 520px) {
 	.keynotes-speakers {
 		display: inline-block;
-		width: 45%;
 	}
 	.keynotes-speakers:not(:last-child) {
 		margin-bottom: 0;

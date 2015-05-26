@@ -18,3 +18,13 @@ a {
 	color: #FFFFFF;
 	font-weight: 400;
 }
+
+.buttonAction {
+	background-color: #fca027;
+	color: #fff;
+}
+
+.buttonInfo {
+	background-color: #1F8CCB;
+	color: #FFF;
+}

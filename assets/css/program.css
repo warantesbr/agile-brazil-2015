@@ -1,98 +1,87 @@
 .program {
-	background: url(../img/backgroundProgram.png) no-repeat center center;
+	background: url(../images/bg-palestre.png) no-repeat center center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
 
-	color: #1F8CCB;
-	text-align: center;
+	color: #fca027;
 
 	padding-top: 2em;
-	padding-bottom: 10em;
+	padding-bottom: 4em;
 	position: relative;
 	overflow: hidden;
 }
-.program-title {
+
+.program-info {
+	text-align: center;
+	padding: 0 2em;
+}
+
+.program-info-title {
 	font-size: 2em;
 	line-height: 1.2em;
 	font-weight: 800;
-
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.6em;
 }
-.program-description {
+.program-info-description {
 	font-size: 1.4em;
 	font-weight: 300;
-
-	max-width: 465px;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 0.8em;
 }
-.program .buttonAction {
-	background-color: #1F8CCB;
-	color: #FFF;
-}
-.program:after {
-	content: url(../img/iconProgram.svg);
 
-	display: block;
-	max-width: 300px;
-	width: 152px;
+.program-info .buttonAction {
+  margin: 0 auto;
+	padding: 0 2em;
+}
 
-	transform: rotateY(180deg);
+.program-info:after {
+	clear: both;
+}
 
-	position: absolute;
-	left: -45px;
-	bottom: -52px;
-}
-@media(min-width: 400px) {
-	.program:after {
-		width: 160px;
-		left: -15px;
-	}
-}
-@media(min-width: 520px) {
-	.program:after {
-		width: 175px;
-		left: 37px;
-		bottom: -85px;
-	}
-}
-@media(min-width: 600px) {
-	.program:after {
-		width: 195px;
-		left: 60px;
-		bottom: -100px;
-	}	
-}
-@media(min-width: 750px) {
-	.program:after {
-		left: 130px;
-	}
-}
-@media(min-width: 800px) {
+@media(min-width: 768px) {
 	.program {
-		text-align: left;
+		padding-bottom: 7em;
+	}
+	.program-info:before {
+		content: url(../images/speaker.png);
+		position: absolute;
+		top: 0;
+		left: -70%;
 
-		padding: 7em 15%;
+	}
+	.program-info {
+		text-align: right;
+		padding: 0 4em 0 0;
+	}
+
+	.program-info-title {
+		margin-top: 2em;
+	}
+
+	.program-info .buttonAction {
+	  margin: 0;
+		float: right;
+		padding: 0 2em;
+	}
+
+}
+@media(min-width: 992px) {
+	.program-info:before {
+		left: -55%;
 	}
 	.program-title,
 	.program-description,
 	.program .buttonAction {
-		margin-left: 0;
-		margin-right: 0;
 	}
-	.program:after {
-		transform: rotateY(0deg);
+	.program:before {
 
-		width: 30%;
-		left: auto;
-		bottom: -140px;
-		right: 10%;
+	}
+}
+
+
+@media(min-width: 1200px) {
+	.program-info:before {
+		left: -40%;
 	}
 }

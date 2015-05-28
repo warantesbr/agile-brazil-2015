@@ -1,5 +1,5 @@
 .footer {
-	background-color: #1F8CCB;
+	background-color: #218ac9;
 
 	overflow: hidden;
 	padding: 2em 0.8em;
@@ -11,10 +11,10 @@
 
 	float: left;
 	overflow: hidden;
-	width: 46%;	
+	width: 46%;
 }
 .footer-newsletter-email {
-	background-color: #1F8CCB;
+	background-color: #218ac9;
 	border-radius: 5px 0 0 5px;
 
 	text-indent: 5px;

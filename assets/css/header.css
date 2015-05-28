@@ -59,7 +59,7 @@
 .wrap-header-menu:before {
 	content: 'Menu ▾';
 
-	background-color: #1F8CCB;
+	background-color: #218ac9;
 	border-radius: 5px;
 	cursor: pointer;
 
@@ -96,7 +96,7 @@
 }
 
 .header-menu-item a {
-	background-color: #1F8CCB;
+	background-color: #218ac9;
 
 	color: #FFF;
 	line-height: 2.5em;
@@ -151,7 +151,7 @@
 		margin-left: 0.05em;
 
 		background-color: #fff;
-		color: #1F8CCB;
+		color: #218ac9;
 
 		font-weight: bold;
 		font-size: 0.9em;

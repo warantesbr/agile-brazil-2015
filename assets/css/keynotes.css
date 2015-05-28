@@ -1,5 +1,5 @@
 .keynotes {
-	background-color: #218CCB;
+	background-color: #218ac9;
 
 	color: #FFF;
 	text-align: center;
@@ -50,7 +50,7 @@
 }
 .keynotes .buttonAction {
 	background-color: #FFF;
-	color: #1F8CCB;
+	color: #218ac9;
 }
 
 @media(min-width: 520px) {

@@ -1,19 +1,22 @@
 
 .header {
-	background: url("../images/bg-header.png") no-repeat center center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+	background-image:  url("../images/bg-marolinhas.png"), url("../images/bg-header.png");
+	background-repeat: repeat-x, no-repeat;
+	background-position: center bottom, center center;
+	-webkit-background-size: auto, cover;
+	   -moz-background-size: auto, cover;
+		   -o-background-size: auto, cover;
+			    background-size: auto, cover;
 
-	-webkit-background-attachment: fixed;
-	   -moz-background-attachment: fixed;
-		 -o-background-attachment: fixed;
-			background-attachment: fixed;
+	-webkit-background-attachment: scroll, fixed;
+ 	   -moz-background-attachment: scroll, fixed;
+       -o-background-attachment: scroll, fixed;
+	        background-attachment: scroll, fixed;
 
 	text-align: center;
 	color: #FFF;
 	min-height: 250px;
+	padding-bottom: 2em;
 }
 
 .header-title {

@@ -1,3 +1,4 @@
+
 .sponsorship-top {
 	background-color: #218CCB;
 
@@ -8,6 +9,7 @@
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
+
 .sponsorship-top-title {
 	font-size: 2em;
 	line-height: 1.2em;
@@ -18,6 +20,7 @@
 	margin-right: auto;
 	margin-bottom: 0.8em;
 }
+
 .sponsorship-top-description {
 	font-size: 1.4em;
 	font-weight: 300;
@@ -28,23 +31,29 @@
 	margin-right: auto;
 	margin-bottom: 0.8em;
 }
+
 .sponsorship-top-description a{
 	color: #FFF;
 }
+
+/* Sponsorship */
+
 .sponsorship {
-	background: url(../img/backgroundSponsorship.png) no-repeat center center;
+	background: url(../images/bg-patrocine.png) no-repeat center center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
 
-	color: #1F8CCB;
+	color: #fca027;
 	text-align: center;
 
 	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-bottom: 6em;
+	overflow: hidden;
 }
-.sponsorship-title {
+
+.sponsorship-info-title {
 	font-size: 2em;
 	font-weight: 800;
 
@@ -53,7 +62,8 @@
 	margin-right: auto;
 	margin-bottom: 0.8em;
 }
-.sponsorship-description {
+
+.sponsorship-info-description {
 	font-size: 1.4em;
 	font-weight: 300;
 
@@ -61,54 +71,43 @@
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0.8em;
-}
-.sponsorship .buttonAction {
-	background-color: #1F8CCB;
-	color: #FFF;
-
-	margin-bottom: 0.4em;
+	margin-bottom: 1em;
 }
 
-.sponsorship-top .buttonAction{
-	background-color: #FFF;
-	color: #1F8CCB;
-	max-width: 220px;
-}
-
-.sponsorship:after {
-	content: url(../img/iconSponsorship.svg);
-
-	display: block;
-	width: 212px;
-	margin-left: auto;
-	margin-right: auto;
-}
 @media(min-width: 800px) {
 	.sponsorship {
-		overflow: hidden;
-		padding: 1em 15%;
+		text-align: right;
 	}
-	.sponsorship:after {
-		display: none;
-	}
-	.sponsorship:before {
-		content: url(../img/iconSponsorship.svg);
 
-		float: left;
-		width: 400px;
+	.sponsorship-info {
+		position: relative;
 	}
-	.sponsorship-title {
-		margin-top: 4em;
+
+	.sponsorship-info:before {
+		content: url(../images/icon-stand.png);
+
+		position: absolute;
+  	top: 0;
+  	left: -70%;
 	}
-	.sponsorship-title,
-	.sponsorship-description {
+
+
+	.sponsorship-info-title {
+		margin-top: 3em;
+		text-transform: uppercase;
+	}
+
+	.sponsorship-info-title,
+	.sponsorship-info-description {
 		text-align: right;
 		max-width: none;
+		width: auto;
 	}
+
 	.sponsorship .buttonAction {
 		margin-right: 0;
 	}
+
 	.sponsorship-description {
 		max-width: auto;
 		width: auto;

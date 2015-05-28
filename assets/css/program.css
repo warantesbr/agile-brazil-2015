@@ -47,12 +47,11 @@
 		content: url(../images/speaker.png);
 		position: absolute;
 		top: 0;
-		left: -70%;
-
+		left: -95%;
 	}
 	.program-info {
 		text-align: right;
-		padding: 0 4em 0 0;
+		padding: 0;
 	}
 
 	.program-info-title {
@@ -68,7 +67,7 @@
 }
 @media(min-width: 992px) {
 	.program-info:before {
-		left: -55%;
+		left: -70%;
 	}
 	.program-title,
 	.program-description,
@@ -81,7 +80,5 @@
 
 
 @media(min-width: 1200px) {
-	.program-info:before {
-		left: -40%;
-	}
+
 }

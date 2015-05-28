@@ -1,21 +1,26 @@
 .place {
-	background-color: #1F8CCB;
+	background: #1F8CCB url("../images/bg-como-chegar.png") no-repeat left bottom;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 
 	color: #FFF;
 	text-align: center;
 
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 7em;
+	padding-bottom: 9em;
 }
 .place-title {
-	font-size: 2em;
+	font-size: 2.5em;
 	line-height: 1.2em;
 	font-weight: 800;
-	
+	text-transform: uppercase;
+
 	width: 79.6875%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.3em;
 }
 .place-description {
 	font-size: 1.4em;
@@ -25,9 +30,5 @@
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2em;
-}
-.place .buttonAction {
-	background-color: #FFF;
-	color: #1F8CCB;
+	margin-bottom: 1em;
 }

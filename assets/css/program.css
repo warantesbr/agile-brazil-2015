@@ -7,10 +7,19 @@
 
 	color: #fca027;
 
-	padding-top: 2em;
-	padding-bottom: 4em;
+
 	position: relative;
 	overflow: hidden;
+}
+
+.program .container {
+	padding-top: 2em;
+	padding-bottom: 4em;
+	background: url(../images/icon-white-vela.png) no-repeat center right;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 }
 
 .program-info {
@@ -41,6 +50,10 @@
 
 @media(min-width: 768px) {
 	.program {
+
+	}
+
+	.program .container {
 		padding-bottom: 7em;
 	}
 	.program-info:before {
@@ -52,6 +65,7 @@
 	.program-info {
 		text-align: right;
 		padding: 0;
+
 	}
 
 	.program-info-title {

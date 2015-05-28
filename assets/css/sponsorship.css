@@ -48,9 +48,18 @@
 	color: #fca027;
 	text-align: center;
 
+
+	overflow: hidden;
+}
+
+.sponsorship .container {
 	padding-top: 2em;
 	padding-bottom: 6em;
-	overflow: hidden;
+	background: url(../images/icon-white-vela.png) no-repeat center right;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 }
 
 .sponsorship-info-title {

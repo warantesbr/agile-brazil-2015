@@ -16,6 +16,7 @@
 .supporter {
 	margin-right: auto;
 	margin-left: auto;
+	display: inline-table;
 }
 
 div.supporter-enclosure{
@@ -78,4 +79,10 @@ div.supporter-enclosure figure img{
 	height: auto;
 	max-width: 135px;
 	max-height: 110px;
+}
+
+.supporter-item.silver img {
+	height: auto;
+	max-width: 180px;
+	max-height: 180px;
 }

@@ -37,6 +37,16 @@
 			$('.wrap-header-menu').click(function () {;
 				$('.header-menu').slideToggle();
 			});
+
+			$('ul.nav.nav-tabs li a').click(function () {
+				event.preventDefault();
+				$('ul.nav.nav-tabs li').removeClass('active');
+				$(this).parent().addClass('active');
+				$('dl.price').hide();
+				$('dl.price.'+$(this).attr('href')).show();
+
+				return false;
+			});
 		});
 	</script>
 </head>
@@ -93,7 +103,13 @@
 		<div class="content">
 			<p>We prepare great discounts for our early birds and Agile Alliance members.</p>
 			<p>The prices ranger for this year are:</p>
-			<dl class="price">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="regular">Regular</a></li>
+				<li><a href="aa">Agile Alliance</a></li>
+				<li><a href="student">Estudante</a></li>
+			</ul>
+
+			<dl class="price regular">
 				<dt>Super early bird (100 first)</dt>
 				<dd>R$ 420,00</dd>
 				<dt>Early bird (150 next)</dt>
@@ -102,13 +118,18 @@
 				<dd>R$ 740,00</a></dd>
 				<dt>Last Minute</dt>
 				<dd>R$ 840,00</dd>
-
+			</dl>
+			<dl class="price aa">
 				<dt>Agile Alliance Member - Super Early Bird</dt>
 				<dd>R$ 378,00</dd>
 				<dt>Agile Alliance Member -  Early Bird</dt>
 				<dd>R$ 486,00</dd>
 				<dt>Agile Alliance Member - Standard</dt>
 				<dd>R$ 666,00</dd>
+			</dl>
+			<dl class="price student">
+				<dt>Student Graduation (Limited to 80)</dt>
+				<dd>R$ 370,00</dd>
 			</dl>
 			<a href="https://inscricoes.agilebrazil.com/events/12/attendances/new?locale=en" target="_blank" class="buttonAction">Register now!</a>
 

@@ -104,6 +104,30 @@
 	margin-right: auto;
 }
 
+.header .volunteers {
+	background: url(../images/icon-hand.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: -10px;
+	bottom: 10%;
+
+	transition-property: opacity, left, top, height;
+  transition-duration: 1s, 0.5s;
+}
+
+
+.header .volunteers a {
+	width: 60px;
+	height: 94px;
+	display: block;
+}
+
+.header .volunteers h5,
+.header .volunteers h6 {
+	display: none;
+}
+
+
 .header-menu-item a.active{
 	background-color: #1cb430;
 	color: #fff;
@@ -160,11 +184,49 @@
 		clear: both;
 	}
 
+	.header .volunteers {
+		position: absolute;
+		left: -40px;
+		top: 80%;
+		height: 188px;
+		background: url(../images/icon-hand.png) no-repeat;
+		padding-left: 130px;
+		padding-bottom: 100px;
+		transition-property: opacity, left, top, height;
+		transition-duration: 1s, 0.5s;
+	}
+
+	.header .volunteers:hover {
+		left: -20px;
+	}
+
+	.header .volunteers a {
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline;
+		width: auto;
+	}
+
+	.header .volunteers h5 {
+		font-size: 3.5em;
+		font-weight: 100;
+		line-height: 1em;
+		display: block;
+	}
+
+	.header .volunteers h6 {
+		font-size: 2em;
+		font-weight: bold;
+		display: block;
+	}
+
+
 }
 
 .clear {
 	clear: both;
 }
+
 
 @media(min-width: 1200px) {
 	.header-menu-item a {

@@ -17,6 +17,7 @@
 	color: #FFF;
 	min-height: 250px;
 	padding-bottom: 2em;
+	position: relative;
 }
 
 .header-title {
@@ -110,7 +111,6 @@
 	position: absolute;
 	left: -10px;
 	bottom: 10%;
-
 	transition-property: opacity, left, top, height;
   transition-duration: 1s, 0.5s;
 }
@@ -186,18 +186,14 @@
 
 	.header .volunteers {
 		position: absolute;
-		left: -40px;
-		top: 80%;
-		height: 188px;
-		background: url(../images/icon-hand.png) no-repeat;
-		padding-left: 130px;
+		left: -20px;
+		height: 122px;
+		padding-left: 100px;
 		padding-bottom: 100px;
-		transition-property: opacity, left, top, height;
-		transition-duration: 1s, 0.5s;
 	}
 
 	.header .volunteers:hover {
-		left: -20px;
+		left: 0px;
 	}
 
 	.header .volunteers a {
@@ -208,14 +204,14 @@
 	}
 
 	.header .volunteers h5 {
-		font-size: 3.5em;
+		font-size: 3em;
 		font-weight: 100;
 		line-height: 1em;
 		display: block;
 	}
 
 	.header .volunteers h6 {
-		font-size: 2em;
+		font-size: 1.7em;
 		font-weight: bold;
 		display: block;
 	}

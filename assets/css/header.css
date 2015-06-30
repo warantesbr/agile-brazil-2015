@@ -53,6 +53,7 @@
 	margin-bottom: 6em;
 }
 
+
 .wrap-header-menu {
 	margin-bottom: 3em;
 }
@@ -180,7 +181,7 @@
 		border-radius: 5px;
 	}
 
-	.header-info {
+	.header-info, .header-about {
 		clear: both;
 	}
 

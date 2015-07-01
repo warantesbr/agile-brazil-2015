@@ -43,6 +43,9 @@
 	font-weight: 300;
 	margin-bottom: 0.8em;
 }
+.program-info-description a {
+	color: #fca027;
+}
 
 .program-info .buttonAction {
   margin: 0 auto;

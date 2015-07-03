@@ -1,6 +1,11 @@
 
 .about .header {
 	background-image:  url("../images/bg-marolinhas.png"), url("../images/bg-about.jpg");
+	-webkit-background-size: auto, cover;
+	   -moz-background-size: auto, cover;
+		   -o-background-size: auto, cover;
+			    background-size: auto, cover;
+
 }
 
 .header-about {
@@ -18,15 +23,27 @@
   text-shadow: 1px 1px 1px #333;
 }
 
+.content-header-wrapper {
+	background-color: #218CCB;
+  color: #FFF;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 .content-wrapper {
-  background-color: #218CCB;
-  color: #FFF;
+  background-color: #f2f2f2;
+  color: #333;
   text-align: left;
   overflow: hidden;
   padding-top: 2em;
   padding-bottom: 2em;
 }
+
+.content-wrapper p a {
+	color: #218CCB;
+}
+
 
 .content {
   font-size: 1.4em;
@@ -53,6 +70,11 @@
 	font-weight: 600;
   margin-top: 1em;
   margin-bottom: 0.4em;
+}
+
+.content h2#sobre {
+	text-align: center;
+	margin-bottom: 2em;
 }
 
 .content h2:first-child {
@@ -123,17 +145,18 @@
   }
 
   .content-wrapper img {
-    width: 40%;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
   }
 
   .content-wrapper img.right {
+		width: 40%;
     float: right;
     margin-left: 2em;
   }
 
   .content-wrapper img.left {
+		width: 45%;
     float: left;
     margin-right: 2em;
   }

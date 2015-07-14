@@ -21,6 +21,15 @@ a {
 	color: #FFFFFF;
 }
 
+.program .header {
+		background-image:  url("../images/bg-marolinhas.png");
+		-webkit-background-size: auto;
+		   -moz-background-size: auto;
+			   -o-background-size: auto;
+				    background-size: auto;
+
+}
+
 /* personas */
 .chairs {
 	background-color: #066BAC;
@@ -206,6 +215,7 @@ li.reviewers {
 #reviewersTerm {
 	display: none;
 }
+
 
 footer {
 	background-color: #044875;

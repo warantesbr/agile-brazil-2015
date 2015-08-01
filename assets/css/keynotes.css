@@ -69,6 +69,7 @@
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 .content .keynote-list .row img {
 	border-radius: 500px;
 	margin-top: 3em;
@@ -77,15 +78,9 @@
 .content .keynote-list .row:first-child img {
 	margin-top: auto;
 }
-.content .keynote-list .row:nth-child(2n+1) img {
-	float: left;
-}
-.content .keynote-list .row:nth-child(2n) img {
-	float: right;
-}
 
 .keynote-list .text {
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.4em;
 	display: inline-block;
 }
@@ -129,7 +124,26 @@
 	.content .keynote-list li {
 		text-align: left;
 	}
-	.content .keynote-list .row:first-child img {
-		margin-top: 3em;
+
+	.content .keynote-list .row img {
+		width: 25%;
 	}
+
+	.content .keynote-list .row:first-child img {
+		margin-top: 2em;
+	}
+
+	.content .keynote-list .row:nth-child(2n+1) img {
+		float: left;
+		margin-right: 1em;
+	}
+	.content .keynote-list .row:nth-child(2n) img {
+		float: right;
+		margin-left: 1em;
+	}
+
+	.keynote-list .text {
+		font-size: 0.8em;
+	}
+
 }

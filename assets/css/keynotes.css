@@ -8,6 +8,14 @@
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
+
+.keynotes .buttonAction {
+	max-width: 380px;
+	font-size: 1em;
+	margin-top: 1.3em;
+	margin-bottom: 1em;
+}
+
 .keynotes-title {
 	font-size: 2em;
 	line-height: 1.2em;
@@ -48,10 +56,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0.8em;
-}
-.keynotes .buttonAction {
-	background-color: #FFF;
-	color: #218ac9;
 }
 
 @media(min-width: 520px) {
@@ -145,5 +149,10 @@
 	.keynote-list .text {
 		font-size: 0.8em;
 	}
+
+	.keynotes .buttonAction {
+		font-size: 1.1em;
+	}
+
 
 }

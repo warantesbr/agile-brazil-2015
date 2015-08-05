@@ -68,7 +68,16 @@ div.supporter-enclosure figure img{
 	position: relative;
 }
 
+.supporter-item.title{
+	width: 310px;
+	height: 310px;
+}
 .supporter-item.silver{
+	width: 250px;
+	height: 250px;
+}
+
+.supporter-item.bronze{
 	width: 210px;
 	height: 210px;
 }
@@ -82,7 +91,19 @@ div.supporter-enclosure figure img{
 	max-height: 110px;
 }
 
+.supporter-item.title img {
+	height: auto;
+	max-width: 260px;
+	max-height: 260px;
+}
+
 .supporter-item.silver img {
+	height: auto;
+	max-width: 210px;
+	max-height: 210px;
+}
+
+.supporter-item.bronze img {
 	height: auto;
 	max-width: 180px;
 	max-height: 180px;

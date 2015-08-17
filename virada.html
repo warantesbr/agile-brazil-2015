@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Chamada para Voluntários - Agile Brazil</title>
+	<title>Virada Ágil - Agile Brazil</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name=viewport content="width=device-width,initial-scale=1">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="assets/css/keynotes.css">
 	<link rel="stylesheet" href="assets/css/program.css">
 	<link rel="stylesheet" href="assets/css/place.css">
-	<link rel="stylesheet" href="assets/css/location.css">
+	<link rel="stylesheet" href="assets/css/virada.css">
 	<link rel="stylesheet" href="assets/css/subscriptions.css">
 	<link rel="stylesheet" href="assets/css/supporter.css">
 	<link rel="stylesheet" href="assets/css/footer.css">
@@ -38,6 +38,16 @@
 		$(function() {
 			$('.wrap-header-menu').click(function () {;
 				$('.header-menu').slideToggle();
+			});
+
+			$('ul.nav.nav-tabs li a').click(function () {
+				event.preventDefault();
+				$('ul.nav.nav-tabs li').removeClass('active');
+				$(this).parent().addClass('active');
+				$('dl.price').hide();
+				$('dl.price.'+$(this).attr('href')).show();
+
+				return false;
 			});
 		});
 	</script>
@@ -62,7 +72,7 @@
 			</li>
 
 			<li class="headerAa-menu-list-item">
-				<a href="en/call-vonlunteers.html">English version</a>
+				<!--<a href="en/virada.html">English version</a>-->
 			</li>
 		</ul>
 	</nav>
@@ -81,8 +91,8 @@
 						<li class="header-menu-item"><a href="patrocinio.html">Patrocine</a></li>
 						<li class="header-menu-item"><a href="inscricoes.html">Inscrições</a></li>
 						<li class="header-menu-item"><a href="localizacao.html">Local</a></li>
-						<li class="header-menu-item"><a href="virada.html">Virada Ágil</a></li>
-						<li class="header-menu-item"><a href="wbma.html">WBMA</a></li>
+						<li class="header-menu-item"><a class="active" href="virada.html">Virada Ágil</a></li>
+						<li class="header-menu-item"><a href="wbma.html">WBMA</a> </li>
 						<!-- <li class="header-menu-item"><a href="#">Programa</a> </li> -->
 						<!-- <li class="header-menu-item"><a href="#">Virada Ágil</a> </li> -->
 						<!-- <li class="header-menu-item"><a href="#">FAQ</a> </li> -->
@@ -92,51 +102,31 @@
 			</div>
 	</header>
 
-	<section class="location">
-		<h1 id="conhe-a-um-pouco-sobre-o-local">Chamada de Voluntários</h1>
+	<section class="virada content-wrapper">
 		<div class="content">
-			<img src="assets/img/volunteers2014.png" alt="Voluntários 2014" class="right" />
-			<p>Se você é uma pessoa animada e que gosta de trabalhar em equipe, o programa de voluntários da Agile Brazil 2015 é uma ótima oportunidade para que você possa auxiliar na realização da conferência pondo a Agilidade em prática e inovando de diversas formas!</p>
-			<p>Estamos em busca de pessoas bem animadas e de forte comprometimento para fazer parte de uma equipe diversificada disposta a compartilhar conhecimento e evoluir progressivamente durante a participação na conferência.</p>
-			<p>Se interessou? Leia atentamente as informações do programa de voluntariado abaixo, no FAQ preparado pelos próprios voluntários das edições anteriores e veteranos do time de voluntários deste ano.</p>
-			<h2>FAQ</h2>
-			<dl class="faq">
-				<dt><b>Quem estamos procurando?</b></dt>
-				<dd>
-					<p>Se você é engajado(a) na comunidade ágil (ou quer ser!), se você deseja integrar uma equipe ágil muito importante para o evento, e também quer fazer a Agile Brazil acontecer, você pode ser um(a) voluntário(a) na edição de 2015.
-					</p>
-				</dd>
-				<dt><b>O que os voluntários fazem?</b></dt>
-				<dd>
-					<p>O principal trabalho do voluntário é fazer com que o evento corra bem. Para isso, você ajudará no credenciamento dos participantes da conferência, na monitoração das salas, recolhimento de feedback das sessões, auxílio a palestrantes e no suporte ao evento como um todo.
-					</p>
-				</dd>
-				<dt><b>Quantas horas/dias os voluntários precisam estar disponíveis?</b></dt>
-				<dd>
-					<p>No dia anterior ao início do evento, os voluntários serão apresentados e participarão de uma sessão de treinamento e montagem de kits.</p>
-					<p>Uma característica importante da Equipe de Voluntários é a capacidade de se auto-organizar. Isso serve, por exemplo, para montar escala de trabalho do time e para pensar em formas inteligentes de cumprir as tarefas.</p>
-					<p>Além do horário fixo, algumas reuniõezinhas são agendadas antes e depois de cada dia de evento. Ao final do terceiro dia, teremos uma reunião de retrospectiva para nos tornamos mais eficientes nas próximas edições.</p>
-				</dd>
-				<dt><b>E o que eu ganho com isso?</b></dt>
-				<dd>
-					<p>O voluntariado é uma das formas mais ricas de se participar de uma conferência, além de possibilitar acesso ao evento àqueles que não poderiam vir de outra forma. Em troca do seu esforço e trabalho você terá acesso aos 3 dias de conferência e oportunidades de mais interação com palestrantes e participantes.
-					</p>
-				</dd>
-				<dt><b>Como faço para me candidatar?</b></dt>
-				<dd>
-					<p>Inscrições para Voluntários 2015 encerradas! Mas espero vê-lo como Participante, faça sua <a href="inscricoes.html" target="_blank">Inscrição</a> .</p>
-				</dd>
-				<dt><b>Quando saberei se fui aceito?</b></dt>
-				<dd>
-					<p>As datas do programa de voluntários são:</p>
-					<ul>
-						<li><strong>03/06:</strong> abertura do formulário de inscrição;</li>
-						<li><strong>03/07:</strong> fechamento do formulário de inscrição;</li>
-						<li><strong>10/07:</strong> aviso dos voluntários aprovados;</li>
-						<li><strong>18/07:</strong> prazo para confirmação dos selecionados.</li>
-					</ul>
-				</dd>
-			</dl>
+			<img src="assets/images/virada-agil.png" alt="Virada Ágil" class="right" />
+			<p>O Agile Brazil 2015 promoverá a <b>4ª Virada Ágil</b> com cursos e treinamentos a preços absurdamente baixos. Serão dois dias com os <b>melhores cursos e treinamentos</b> oferecidos por várias das principais empresas brasileiras especializadas em agilidade.</p>
+			<p>Durante os dias que precedem o Agile Brazil, <b>Porta de Galinhas</b> estará repleta de cursos de excelente qualidade a preços reduzidos. Se você pretende fazer um curso nos próximos meses, aguarde a programação da Virada Ágil pois essa será a oportunidade de fazer o mesmo treinamento com até 50% de desconto sobre o valor de mercado! <b>Não perca essa oportunidade!</b></p>
+
+			<h2 id="cursos">Cursos</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Treinamento</th>
+						<th>Data</th>
+						<th>Oferecido por</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td data-label="Treinamento"><a href="virada-safe.html">Certificação SAFe Agilist (SA)</a></td>
+						<td data-label="Data">19 a 20 - Outubro</td>
+						<td data-label="Oferecido por">Adaptworks</td>
+					</tr>
+				</tbody>
+			</table>
+
 		</div>
 	</section>
 

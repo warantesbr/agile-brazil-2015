@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Virada Ágil - Agile Brazil</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/lib/grid12.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/button.css">
+	<link rel="stylesheet" href="assets/css/tables.css">
+	<link rel="stylesheet" href="assets/css/headerAa.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/keynotes.css">
+	<link rel="stylesheet" href="assets/css/program.css">
+	<link rel="stylesheet" href="assets/css/place.css">
+	<link rel="stylesheet" href="assets/css/virada.css">
+	<link rel="stylesheet" href="assets/css/subscriptions.css">
+	<link rel="stylesheet" href="assets/css/supporter.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-12446729-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.wrap-header-menu').click(function () {;
+				$('.header-menu').slideToggle();
+			});
+
+			$('ul.nav.nav-tabs li a').click(function () {
+				event.preventDefault();
+				$('ul.nav.nav-tabs li').removeClass('active');
+				$(this).parent().addClass('active');
+				$('dl.price').hide();
+				$('dl.price.'+$(this).attr('href')).show();
+
+				return false;
+			});
+		});
+	</script>
+</head>
+
+<body class="">
+<header class="headerAa">
+	<nav class="headerAa-menu">
+		<ul class="headerAa-menu-list">
+			<li class="headerAa-menu-list-item">
+				<a href="http://agilealliance.org/pt/">Agile Alliance</a>
+			</li>
+
+			<li class="headerAa-menu-list-item">
+				<a href="http://agilealliance.org/pt/membresia/">Membros</a>
+			</li>
+
+			<li class="headerAa-menu-list-item logo">
+				<a href="http://agilealliance.org/pt/">
+					<img src="assets/img/logoAgileAlliance.png" alt="Logo da Agile Alliance">
+				</a>
+			</li>
+
+			<li class="headerAa-menu-list-item">
+				<!--<a href="en/virada.html">English version</a>-->
+			</li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<header class="header">
+			<div class="container">
+				<h1 class="header-title">
+					<a href="index.html">
+						<img src="assets/images/logo-ab.png" alt="Logo da Agile Brazil">
+					</a>
+				</h1>
+				<nav class="wrap-header-menu">
+					<ul class="header-menu">
+						<li class="header-menu-item"><a href="sobre.html">Sobre</a> </li>
+						<li class="header-menu-item"><a href="patrocinio.html">Patrocine</a></li>
+						<li class="header-menu-item"><a href="inscricoes.html">Inscrições</a></li>
+						<li class="header-menu-item"><a href="localizacao.html">Local</a></li>
+						<li class="header-menu-item"><a class="active" href="virada.html">Virada Ágil</a></li>
+						<li class="header-menu-item"><a href="wbma.html">WBMA</a> </li>
+						<!-- <li class="header-menu-item"><a href="#">Programa</a> </li> -->
+						<!-- <li class="header-menu-item"><a href="#">Virada Ágil</a> </li> -->
+						<!-- <li class="header-menu-item"><a href="#">FAQ</a> </li> -->
+						<!-- <li class="header-menu-item"><a href="#">Contato</a> </li> -->
+					</ul>
+				</nav>
+			</div>
+	</header>
+
+	<section class="virada content-wrapper">
+		<h1>Certificação SAFe Agilist (SA)</h1>
+		<a href="#" target="_blank" class="buttonAction">Inscreva-se agora!</a>
+		<div class="content">
+			<p><a href="http://www.adaptworks.com.br/" target="_blank"><img class="left"
+			                                                                src="assets/img/virada/adaptworks.png"
+			                                                                alt="Adaptworks"></a></p>
+
+			<p>Iniciamos nossas operações em 2009, e nos tomamos uma empresa focada em treinamentos e no desenvolvimento
+				de software utilizando métodos ágeis. Na área de treinamento em metodologias ágeis somos referência no
+				mercado brasileiro em formação, coaching e implementação corporativa. A unidade de treinamentos capacita
+				e conduz nossos clientes na adoção e adaptação cultural quanto as práticas ágeis, para que estes,
+				alcancem melhores resultados em seus projetos. Com ensino diferenciado, que atrela conteúdo didático a
+				dinâmicas e atividades em grupo, que são os pilares dos treinamentos, os clientes são imersos em
+				diversas experiências reais sobre gerenciamento ágil de projetos, facilitando o aprendizado.</p>
+			<h3>Conteúdo programático</h3>
+
+			<p>Scaled Agile Framework(SAFe) é um modelo, baseado em Scrum, XP, Lean e muita experiência de campo, para a
+				implementação de práticas ágeis em grande escala. Ele reconhece o que tipicamente tem funcionado bem no
+				trabalho de times ágeis, na forma de fazer gestão de programa e na maneira ágil tratar um portfolio de
+				demandas organizacionais. O SAFe fornece um conjunto de práticas, devidamente experimentadas, para
+				ajudar grandes organizações a responderem perguntas do tipo: Como rodar ágil em contextos envolvendo
+				vários times? Como sincronizar o trabalho desses times? Como coordenar o resultado do trabalho de times
+				distribuídos geograficamente? Como priorizar demandas em produtos robustos e dinâmicos? Como escalar uma
+				arquitetura ágil? Como tratar, de maneira ágil, os riscos de um projeto complicado? Como ser ágil e
+				estar em conformidade com modelos de governança? Essas tem sido algumas das questões que o SAFe está
+				ajudando a responder em grandes empresas que estão adotando ágil realmente em larga escala e gerando
+				resultados reais em redução de time-to-market, aumento da satisfação dos clientes, aumento da felicidade
+				no trabalho e aumento da percepção sobre o retorno de investimento e até mesmo, redução drástica dos
+				investimentos em projetos não necessários/importantes. Nesse treinamento de 2 (dois) dias, você ganhará
+				o conhecimento necessário para liderar uma transformação ágil alavancada pelo SAFe (Scaled Agile
+				Framework), pelos princípios fundamentais do pensamento Lean e pelo fluxo do desenvolvimento de produto.
+				Também entenderá como construir os skills necessários para uma transformação corporativa rumo à uma
+				abordagem ágil nos níveis de portfolio, programa e time.</p>
+
+			<p>Observa&ccedil;&atilde;o:</p>
+
+			<p>Esse curso &eacute; pr&eacute;-condi&ccedil;&atilde;o a para a realiza&ccedil;&atilde;o da prova de
+				certifica&ccedil;&atilde;o internacional <a target="_new"
+				                                            href="http://www.scaledagileacademy.com/?page=safeagilistsa">
+					Scaled Agile Framework Agilist (SA) da Scaled Agile Academy </a>.<br/>&nbsp;</p>
+
+			<p>T&oacute;picos:</p>
+
+			<p>1 - Introdu&ccedil;&atilde;o ao SAFE (Scaled Agile Framework&trade;)</p>
+
+			<p>2 - Lean Thinking</p>
+
+			<p>- Uma vis&atilde;o geral sobre Lean Software Development e Product Development Flow</p>
+
+			<p>3 - Agile Development</p>
+
+			<p>- Aplicando a filosofia &aacute;gil no contexto corporativo<br/>- Como fazer um &aacute;gil para maiores?
+			</p>
+
+			<p>4 - SAFe ScrumXP</p>
+
+			<p>- Um passo-a-passo experimental do &quot;SAFe ScrumXP&quot;<br/>- T&eacute;cnicas escal&aacute;veis de
+				desenvolvimento de software<br/>- Gest&atilde;o de Projeto e prioriza&ccedil;&atilde;o por princ&iacute;pios
+				econ&ocirc;micos<br/>- Alinhamento em escala com os n&iacute;veis de programa e de portfolio<br/>-
+				Compartilhamento do conhecimento t&eacute;cnico entre m&uacute;ltiplos times</p>
+
+			<p>5 - Agile Release Train</p>
+
+			<p>- Identifica&ccedil;&atilde;o, implementa&ccedil;&atilde;o e execu&ccedil;&atilde;o de Agile Release
+				Trains<br/>- Teams-of-Agile-Teams<br/>- Sincroniza&ccedil;&atilde;o e Cad&ecirc;ncia em m&uacute;ltiplos
+				times<br/>- Planejamento da velocidade/carga envolvendo v&aacute;rios times<br/>- Otimiza&ccedil;&atilde;o
+				da qualidade das entregas<br/>- Melhoria da velocidade das entregas<br/>- Melhoria no fluxo de
+				valor<br/>- O jeito &aacute;gil de gerir de Riscos</p>
+
+			<p>6 - Agile Portfolio Management</p>
+
+			<p>- Padr&otilde;es para estrat&eacute;gia de transforma&ccedil;&atilde;o &aacute;gil<br/>- Gest&atilde;o de
+				Programa<br/>- Governan&ccedil;a<br/>- Estrat&eacute;gia &aacute;gil para investimentos</p>
+
+			<p>7 - Agile Architecture</p>
+
+			<p>- Princ&iacute;pios da Arquitetura &Aacute;gil<br/>- Como fica o papel do Arquiteto de Sistemas e/ou do
+				Arquiteto Corporativo<br/>- Evolu&ccedil;&atilde;o da arquitetura com o Flow</p>
+
+			<p>8 - Scaling Leadership</p>
+
+			<p>- Escalando a abordagem Lean<br/>- Escalando a lideran&ccedil;a &aacute;gil<br/>- An&aacute;lise de
+				centraliza&ccedil;&atilde;o/descentraliza&ccedil;&atilde;o de decis&otilde;es</p>
+			<h3>Instrutor</h3>
+
+			<p><img class="left" src="assets/img/virada/pimentel.jpeg" alt="pimentel"><strong>Manoel Pimentel</strong>. É Agile Coach/Trainer na Adaptworks Treinamentos e
+				Presidente da Agile Alliance Brazil. Trabalha há mais de 18 anos na área de TI, onde possui uma profunda
+				experiência em ajudar, como coach ou trainner, a transição/experimentação Ágil (Scrum, XP, FDD, Lean,
+				SAFe) em grandes e complexas organizações (por exemplo: Sicoob, Bancoob, Stefanini, Oi, GVT, XP,
+				Petrobras, ITA, Itaú, Localiza). Manoel é um dos pioneiros no movimento Ágil no Brasil. Ajudou na
+				tradução oficial do Manifesto Ágil para o Português. É membro ativo da organização do Agile Brazil
+				(inclusive sendo chairman da edição 2013). Ele também é o fundador da Revisa e Blog Visão Ágil. Já
+				escreveu para portais internacionais como InfoQ, AgileJournal, ScrumAlliance, AgileAlliance e revistas
+				como SQL Magazine, JavaMagazine, Mundo J e outras. Revisou e Escreveu o prefácio do Livro Agile Project
+				Management (Editora AltaBooks) em Português e do Livro Scrum – Gestão Ágil para Projetos de Sucesso
+				(Editora Casa do Código). Também é um co-autores do livro Métodos Ágeis para o Desenvolvimento de
+				Software (Editora Bookman). É o mais ativo licensed trainer de Management 3.0 no Brasil, tendo
+				inclusive, contribuído para formação e licenciamento de outros grandes facilitadores do cenário
+				nacional. Também é detentor das certificações SPC (Scaled Agile Academy), CAC (Alpha Coach –
+				WorthEthic), CSM, CSPO e CSP (ScrumAlliance).</p>
+
+			<h3>Mais Informações</h3>
+			<p><b>Dia:</b> 19 a 20 de outubro de 2015<br>
+				<b>Horário:</b> A definir<br>
+				<b>Local:</b> A definir<br>
+			</p>
+
+			<h2 id="cursos">Investimento</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Até</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td data-label="Até">até 31/08/2015</td>
+						<td data-label="Valor">R$ 1.050,00</td>
+					</tr>
+					<tr>
+						<td data-label="Até">até 30/09/2015</td>
+						<td data-label="Valor">R$ 1.265,00</td>
+					</tr>
+					<tr>
+						<td data-label="Até">após 30/09/2015</td>
+						<td data-label="Valor">R$ 1.365,00</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="#" target="_blank" class="buttonAction">Inscreva-se agora!</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<ul class="footer-socialNetworks">
+			<li class="footer-socialNetworks-item">
+				<a href="https://twitter.com/agilebrazil">Twitter da Agile Brazil</a>
+			</li>
+
+			<li class="footer-socialNetworks-item">
+				<a href="https://www.linkedin.com/groups/Agile-Brazil-3148432">Linkedin da Agile Brazil</a>
+			</li>
+
+			<li class="footer-socialNetworks-item">
+				<a href="https://www.facebook.com/AgileBrazil">Facebook da Agile Brazil</a>
+			</li>
+
+			<li class="footer-socialNetworks-item">
+				<a href="https://vimeo.com/agilebrazil">Vimeo da Agile Brazil</a>
+			</li>
+		</ul>
+	</footer>
+</main>
+</body>
+</html>

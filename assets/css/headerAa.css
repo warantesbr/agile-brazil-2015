@@ -39,6 +39,7 @@
 .headerAa-menu-list-item:last-child a {
     color: #FFF;
     text-decoration: none;
+		text-shadow: 1px 1px 1px #000;
 }
 [lang=en] .headerAa-menu-list-item:last-child {
     font-size: 0.95em;

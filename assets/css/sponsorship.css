@@ -39,7 +39,7 @@
 /* Sponsorship */
 
 .sponsorship {
-	background: url(../images/bg-patrocine.png) no-repeat center center;
+	background: url(../images/bg-patrocionio-2.png) no-repeat center center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -50,7 +50,7 @@
        -o-background-attachment: fixed;
 	        background-attachment: fixed;
 
-	color: #fca027;
+	color: #fff;
 	text-align: center;
 
 
@@ -98,7 +98,7 @@
 	}
 
 	.sponsorship-info:before {
-		content: url(../images/icon-stand.png);
+		content: url(../images/icon-patrocionio.png);
 
 		position: absolute;
   	top: 0;

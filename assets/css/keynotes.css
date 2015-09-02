@@ -102,11 +102,11 @@
 }
 
 .keynote-page .header {
-	background-image:  url("../images/bg-marolinhas.png"), url("../images/bg-keynotes.jpg");
-	-webkit-background-size: auto, cover;
-	   -moz-background-size: auto, cover;
-		   -o-background-size: auto, cover;
-			    background-size: auto, cover;
+	background-image:  url("../images/bg-keynotes.jpg");
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		   -o-background-size: cover;
+			    background-size: cover;
 
 }
 /* @TODO  refactor class names, this is a mess */

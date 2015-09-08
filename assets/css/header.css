@@ -204,6 +204,7 @@
 
 	.header-menu-item {
 		display: inline-block;
+    font-size: 14px;
 	}
 
 	.header-menu-item a {

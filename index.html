@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/sponsorship.css">
     <link rel="stylesheet" href="assets/css/supporter.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+	  <link rel="stylesheet" href="assets/css/subcribe.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -33,9 +34,53 @@
 	</script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	  <script>
-		  $(function() {
-			  $('.wrap-header-menu').click(function () {;
-				  $('.header-menu').slideToggle();
+		  jQuery(document).ready(function ($) {
+			  $(function () {
+				  $('.wrap-header-menu').click(function () {
+					  ;
+					  $('.header-menu').slideToggle();
+				  });
+			  });
+
+			  $('#submit').on('click', function () {
+
+				  var $form = $('#formEmail');
+
+				  $.ajax({
+					  type: 'POST',
+					  datatype: 'json',
+					  url: $form[0].action,
+					  data: $form.serialize(),
+					  success: function (response, status) {
+						  var messageContainer = $('#formMessage');
+						  var _obj = { "status": "error", "message": "Não foi possível enviar seus dados. Tente novamente mais tarde." };
+						  var jsonResponse = JSON.parse(response) || _obj;
+
+						  if (jsonResponse.status === 'error') {
+							  messageContainer
+									  .text(jsonResponse.message)
+									  .removeClass('success')
+									  .addClass('error')
+									  .css('display', 'block');
+							  return false;
+						  }
+
+						  messageContainer
+								  .text('Email cadastrado com sucesso!')
+								  .removeClass('error')
+								  .addClass('success')
+								  .css('display', 'block');
+					  },
+					  error: function (xhr, status) {
+						  var messageContainer = $('#formMessage');
+
+						  messageContainer
+								  .text('Não foi possível enviar seus dados. Tente novamente mais tarde.')
+								  .removeClass('success')
+								  .addClass('error')
+								  .css('display', 'block');
+					  }
+				  });
 			  });
 		  });
 	  </script>
@@ -295,6 +340,33 @@
 		    </ul>
 	    </div>
     </section>
+	  <section id="subscribe-form">
+	      <div class="subscribe-form">
+		      <p>Preencha o formulário para receber novidades por email.</p>
+
+		      <form id="formEmail" action="add_subscriber.php" method="post">
+			      <ul>
+				      <li class="required">
+					      <label for="name">Nome</label>
+					      <input type="text" class="inputLarge" name="name" id="name" value="" required placeholder="Nome"/>
+				      </li>
+				      <li class="required">
+					      <label for="email">Email</label>
+					      <input type="email" class="inputLarge" name="email" id="email" value="" required
+					             placeholder="Email"/>
+				      </li>
+				      <li class="submitEmail">
+					      <input type="hidden" name="lang" id="lang" value="pt">
+					      <input type="button" class="buttonAction" name="submit" id="submit" value="Assinar"/>
+				      </li>
+			      </ul>
+			      <div class="notice">
+				      <span id="formMessage" class="notice" aria-hidden="true"/>
+			      </div>
+		      </form>
+
+	      </div>
+	  </section>
 
       <footer class="footer">
       	<ul class="footer-socialNetworks">

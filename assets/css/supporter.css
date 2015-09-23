@@ -88,6 +88,11 @@ div.supporter-enclosure figure img{
 	height: 170px;
 }
 
+.supporter-item.online{
+	width: 150px;
+	height: 150px;
+}
+
 .supporter-item:not(:last-child) {
 	margin-bottom: 10px;
 }
@@ -119,4 +124,10 @@ div.supporter-enclosure figure img{
 	height: auto;
 	max-width: 150px;
 	max-height: 150px;
+}
+
+.supporter-item.online img {
+	height: auto;
+	max-width: 130px;
+	max-height: 130px;
 }

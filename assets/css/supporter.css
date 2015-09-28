@@ -73,6 +73,11 @@ div.supporter-enclosure figure img{
 	height: 310px;
 }
 
+.supporter-item.diamond{
+	width: 280px;
+	height:280px;
+}
+
 .supporter-item.gold{
 	width: 250px;
 	height: 250px;
@@ -106,6 +111,12 @@ div.supporter-enclosure figure img{
 	height: auto;
 	max-width: 260px;
 	max-height: 260px;
+}
+
+.supporter-item.diamond img {
+	height: auto;
+	max-width: 230px;
+	max-height: 230px;
 }
 
 .supporter-item.gold img {

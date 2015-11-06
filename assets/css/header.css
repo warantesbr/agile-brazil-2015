@@ -134,14 +134,13 @@
 }
 
 .header .volunteers {
-	background: url(../images/icon-sponsor.png) no-repeat;
+	background: url(../images/icon-hand.png) no-repeat;
+	background-size: contain;
 	position: absolute;
-	left: 10px;
+	left: -10px;
 	bottom: 10%;
 	transition-property: opacity, left, top, height;
   transition-duration: 1s, 0.5s;
-	text-align: left;
-	display: none;
 }
 
 
@@ -230,7 +229,7 @@
 		position: absolute;
 		left: -20px;
 		height: 122px;
-		padding-left: 120px;
+		padding-left: 100px;
 		padding-top: 10px;
 		display: block;
 	}
@@ -247,15 +246,15 @@
 	}
 
 	.header .volunteers h5 {
-		font-size: 3em;
+		font-size: 2em;
 		font-weight: 100;
 		line-height: 1em;
 		display: block;
 	}
 
 	.header .volunteers h6 {
-		font-size: 1.7em;
-		font-weight: bold;
+		font-size: 1.6em;
+		font-weight: normal;
 		display: block;
 	}
 

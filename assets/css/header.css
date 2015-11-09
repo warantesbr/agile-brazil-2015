@@ -148,6 +148,7 @@
 	width: 60px;
 	height: 94px;
 	display: block;
+	text-decoration: none;
 }
 
 .header .volunteers h5,
@@ -278,7 +279,7 @@
 	.header .volunteers h5{
 		margin-left: 3.5em;
 		width: 7em;
-		font-size: 1.2em;
+		font-size: 1.3em;
 		display: block;
 	}
 	.header .volunteers h6 {
